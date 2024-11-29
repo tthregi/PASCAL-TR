@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9f9f9, #e8f4ff);
+    color: #333;
+    font-family: cursive;
+}
+img{
+    border: ridge #8e6549 9px;
+}
+
+header {
+    background-color: #8e6549;
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 
+    -1px -1px 0 black, 
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.portrait {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#more-info {
+    background-color: #8e6549c6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#more-info:hover {
+    background-color: #472a16b0;
+}
+
+#extra-info {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a.button {
+    text-decoration: none;
+    color: white;
+    background-color: #8e6549c6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a.button:hover {
+    background-color: #331c0cc6;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+h2{
+    text-decoration: underline #8e6549 4px;
+}
+span{
+    color: #8e6549;
+    font-weight: bolder;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: #8e6549c6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+#startButton{
+    text-decoration: none;
+    color: white;
+    background-color: #8e6549c6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    float: right;
+ 
+
+}
+#startButton:hover {
+    background-color: #331c0cc6;
+}

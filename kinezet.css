@@ -1,0 +1,136 @@
+/* Általános stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #936f40;
+    color: #333;
+    font-family: cursive;
+}
+
+#egesz {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border:groove #302518 5px ;
+    width: 700%;
+}
+
+/* Fejléc stílusai */
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#header hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+#questionNumber {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Kérdés rész stílusai */
+#questionContainer {
+    text-align: center;
+}
+
+#question {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+#questionImage {
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+#questionSound {
+    margin-top: 10px;
+}
+
+/* Válasz gombok stílusai */
+#answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.answer {
+    background-color: #b06838b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.answer:hover {
+    background-color: #ad7633cb;
+}
+
+/* Segítségek stílusai */
+#lifelineContainer {
+    margin: 20px 0;
+}
+
+#felezesButton {
+    background-color: #ac8254;
+    color: #333;
+    border:thin 5px beige;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#felezesButton:hover {
+    background-color: #614c0f;
+    color: #ac8254;
+}
+
+/* Életek stílusai */
+#lives {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#lives img {
+    width: 30px;
+    height: auto;
+}
+#pasci{
+    width: 100px;
+    height: 100px;
+    
+}
+#pasci1{
+    width: 100px;
+    height: 100px;
+    float: right;
+    
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 
+    -1px -1px 0 black, 
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+  
+}

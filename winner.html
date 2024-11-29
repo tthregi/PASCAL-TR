@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nyertel</title>
+</head>
+<style>
+    p{ font-family: cursive;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px ;
+    }
+    body{
+        background: linear-gradient(to bottom, teal, rgb(11, 197, 120));
+    }
+    H1{
+        font-size: 70px ;
+        text-align: center;
+    font-family: cursive;
+   
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    margin-top: 10%;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e608, 0 0 40px #24b463, 0 0 50px #ffffff, 0 0 60px #17bd57, 0 0 70px #3d9010;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px teal, 0 0 40px turquoise, 0 0 50px indigo, 0 0 60px white, 0 0 70px #14afa7, 0 0 80px #15765c;
+    }
+  }
+
+
+  
+  a{
+    position: absolute;
+   
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #27a494e9;
+    height: 80px;
+    width: 120px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    line-height: 80px; /* Az elem tartalmát függőlegesen középre helyezi */
+    text-decoration: none; /* Eltávolítja az alapértelmezett aláhúzást */
+    border-radius: 8px; /* Lekerekített sarkok opcionálisan */
+    border:ridge rgb(23, 126, 109) ;
+   
+
+  }
+  #masik:hover{
+    background-color: #0f846be9;
+    color: white;
+
+  }
+    
+</style>
+<body>
+    <H1>Nyertél!</H1>
+    <p>A játéknak vége, innen visszamehetsz a főoldalra:</p>
+    <p><a id="masik" href="../MATEK/index.html">Főoldal</a></p>
+    
+</body>
+</html>

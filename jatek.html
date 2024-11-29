@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Játék</title>
+    <link rel="stylesheet" href="kinezet.css">
+    <script src="jatek.js"></script>
+
+   
+</head>
+<body>
+   <div id="egesz">
+   
+ <img id="pasci" src="Képernyőkép 2024-11-28 210655.png" alt="">
+ <img id="pasci1" src="Képernyőkép 2024-11-28 210655.png" alt="">
+ <h1>Pascal-Quiz</h1>
+    <div class="container">
+        <div id="header">
+        
+          
+            <hr>
+            <div id="questionNumber"></div>
+        </div>
+        <div id="questionContainer">
+            <div id="question"></div>
+            
+            <img id="questionImage" src="" alt="Kép" style="display: none; max-width: 20%;">
+                <br>
+            <audio id="questionSound" controls style="display: none;"></audio>
+            <div id="answers">
+                <button id="answer0" class="answer" onclick="checkAnswer(0)"></button>
+                <button id="answer1" class="answer" onclick="checkAnswer(1)"></button>
+                <button id="answer2" class="answer" onclick="checkAnswer(2)"></button>
+                <button id="answer3" class="answer" onclick="checkAnswer(3)"></button>
+            </div>
+        
+            <div id="lives">
+                <img id="life1" src="sziv-removebg-preview.png" alt="Élet">
+                <img id="life2" src="sziv-removebg-preview.png" alt="Élet">
+                <img id="life3" src="sziv-removebg-preview.png" alt="Élet">
+            </div>
+        </div>
+    </div>
+ </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>

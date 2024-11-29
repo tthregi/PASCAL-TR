@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomiális Tétel és Pascal Háromszög</title>
+    <style>
+        a{
+           background-color: rgb(110, 163, 110);
+           border: double black;
+           border-radius: 9px;
+           text-align: center;
+   
+
+        }
+        body {
+            font-family: cursive;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #a7e67ada;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            font-family: fantasy;
+        }
+        .triangle-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .row {
+            margin: 5px 0;
+        }
+        .cell {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #3498db;
+            color: white;
+            margin: 2px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Binomiális Tétel és Pascal Háromszög</h1>
+    <p><a id="masik" href="../MATEK/index.html">Főoldal</a></p>
+    <p>
+        A <strong>binomiális tétel</strong> egy matematikai tétel, amely megadja az 
+        <code>(a + b)<sup>n</sup></code> kifejezés kibontását. A tétel szoros kapcsolatban áll a Pascal-háromszöggel, 
+        amely a binomiális együtthatók képi ábrázolása.
+    </p>
+    <h2>Pascal Háromszög</h2>
+    <p>Az alábbi generátorral létrehozhatod a Pascal-háromszög első néhány sorát:</p>
+    <input type="number" id="rows" min="1" max="20" value="5">
+    <button onclick="generateTriangle()">Generálás</button>
+    <div class="triangle-container" id="triangle"></div>
+
+    <script>
+        function generateTriangle() {
+            const rows = document.getElementById('rows').value;
+            const triangleContainer = document.getElementById('triangle');
+            triangleContainer.innerHTML = ''; // Törli a korábbi tartalmat
+
+            const triangle = [];
+            for (let i = 0; i < rows; i++) {
+                triangle[i] = [];
+                for (let j = 0; j <= i; j++) {
+                    if (j === 0 || j === i) {
+                        triangle[i][j] = 1;
+                    } else {
+                        triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+                    }
+                }
+            }
+
+            triangle.forEach(row => {
+                const rowDiv = document.createElement('div');
+                rowDiv.className = 'row';
+                row.forEach(cell => {
+                    const cellDiv = document.createElement('div');
+                    cellDiv.className = 'cell';
+                    cellDiv.textContent = cell;
+                    rowDiv.appendChild(cellDiv);
+                });
+                triangleContainer.appendChild(rowDiv);
+            });
+        }
+    </script>
+</body>
+</html>

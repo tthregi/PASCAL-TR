@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vesztettel</title>
+</head>
+<style>
+    p{ font-family: cursive;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px ;
+    }
+    body{
+        background: linear-gradient(to bottom, #832f22, #b77c39);
+    }
+    H1{
+        font-size: 70px ;
+        text-align: center;
+    font-family: cursive;
+   
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    margin-top: 10%;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #8e3330, 0 0 50px #cc4916, 0 0 60px #e60000, 0 0 70px #500808;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #c60000, 0 0 40px #FFD700, 0 0 50px #ff624d, 0 0 60px #ff0d00, 0 0 70px #ff4da6, 0 0 80px #b10b0b;
+    }
+  }
+
+  #egyik{
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #d5a75ee9;
+    height: 80px;
+    width: 120px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    line-height: 80px; /* Az elem tartalmát függőlegesen középre helyezi */
+    text-decoration: none; /* Eltávolítja az alapértelmezett aláhúzást */
+    border-radius: 8px; /* Lekerekített sarkok opcionálisan */
+    border:ridge rgba(163, 24, 24, 0.583) ;
+  }
+  #masik{
+    position: absolute;
+    right: 25%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #d5a75ee9;
+    height: 80px;
+    width: 120px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    line-height: 80px; /* Az elem tartalmát függőlegesen középre helyezi */
+    text-decoration: none; /* Eltávolítja az alapértelmezett aláhúzást */
+    border-radius: 8px; /* Lekerekített sarkok opcionálisan */
+    border:ridge rgba(163, 24, 24, 0.583) ;
+   
+
+  }
+  #masik:hover{
+    background-color: #4d3611e9;
+    color: white;
+
+  }
+  
+  #egyik:hover{
+    background-color: #4d3611e9;
+    color: white;
+
+  }
+    
+</style>
+<body>
+    <H1>Vesztettél!</H1>
+    <p>A játéknak vége. a gombon keresztül újra kezdheted, vagy visszamehetsz a főoldalra:</p>
+
+    <p><a id="egyik" href="../MATEK/jatek.html">Próbáld újra</a></p>
+    <p><a id="masik" href="../MATEK/index.html">Főoldal</a></p>
+    
+</body>
+</html>
